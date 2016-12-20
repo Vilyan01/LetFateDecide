@@ -15,9 +15,9 @@
 		8842A6691E0901370034609E /* LetFateDecideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842A6681E0901370034609E /* LetFateDecideUITests.swift */; };
 		888D37BB1E0904B30065ED08 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D37BA1E0904B30065ED08 /* Choice.swift */; };
 		888D37BF1E0906330065ED08 /* ChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D37BE1E0906330065ED08 /* ChoiceCell.swift */; };
-		888D37C11E09088A0065ED08 /* ChoiceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D37C01E09088A0065ED08 /* ChoiceGroup.swift */; };
 		888D37C31E090A760065ED08 /* DecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D37C21E090A760065ED08 /* DecisionViewController.swift */; };
 		888D37C51E0911350065ED08 /* FateDecider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D37C41E0911350065ED08 /* FateDecider.swift */; };
+		888D37C71E091B560065ED08 /* ChoiceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D37C61E091B560065ED08 /* ChoiceGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		8842A66A1E0901370034609E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		888D37BA1E0904B30065ED08 /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Choice.swift; path = models/Choice.swift; sourceTree = "<group>"; };
 		888D37BE1E0906330065ED08 /* ChoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoiceCell.swift; path = views/ChoiceCell.swift; sourceTree = "<group>"; };
-		888D37C01E09088A0065ED08 /* ChoiceGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceGroup.swift; sourceTree = "<group>"; };
 		888D37C21E090A760065ED08 /* DecisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecisionViewController.swift; path = controllers/DecisionViewController.swift; sourceTree = "<group>"; };
 		888D37C41E0911350065ED08 /* FateDecider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FateDecider.swift; path = models/FateDecider.swift; sourceTree = "<group>"; };
+		888D37C61E091B560065ED08 /* ChoiceGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoiceGroup.swift; path = models/ChoiceGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +162,8 @@
 		8842A6791E0902330034609E /* models */ = {
 			isa = PBXGroup;
 			children = (
+				888D37C61E091B560065ED08 /* ChoiceGroup.swift */,
 				888D37BA1E0904B30065ED08 /* Choice.swift */,
-				888D37C01E09088A0065ED08 /* ChoiceGroup.swift */,
 				888D37C41E0911350065ED08 /* FateDecider.swift */,
 			);
 			name = models;
@@ -305,8 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				888D37C31E090A760065ED08 /* DecisionViewController.swift in Sources */,
-				888D37C11E09088A0065ED08 /* ChoiceGroup.swift in Sources */,
 				888D37C51E0911350065ED08 /* FateDecider.swift in Sources */,
+				888D37C71E091B560065ED08 /* ChoiceGroup.swift in Sources */,
 				888D37BB1E0904B30065ED08 /* Choice.swift in Sources */,
 				8842A6491E0901360034609E /* AppDelegate.swift in Sources */,
 				888D37BF1E0906330065ED08 /* ChoiceCell.swift in Sources */,
