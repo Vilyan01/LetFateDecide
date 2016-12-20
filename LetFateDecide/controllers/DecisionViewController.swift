@@ -11,12 +11,16 @@ import UIKit
 class DecisionViewController: UITableViewController {
     
     var choiceGroup:ChoiceGroup?
+    var fateDecider:FateDecider?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Load choice group from app delegate.
         choiceGroup = (UIApplication.shared.delegate as! AppDelegate).choiceGroup
+        
+        // create our fate decider
+        fateDecider = FateDecider()
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +53,7 @@ class DecisionViewController: UITableViewController {
 
     // MARK: - Actions
     @IBAction func letFateDecideTapped(_ sender: Any) {
+        print("Fate Decider says: \(fateDecider!.decideFate(choiceGroup: self.choiceGroup!)) wins")
     }
     
     // Handle the adding of choices to the choice group.
@@ -68,6 +73,9 @@ class DecisionViewController: UITableViewController {
         controller.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
             // get input from text field
             if input!.text! != "" {
+                // reset the choices
+                self.choiceGroup?.resetChoices()
+                
                 // create a new choice and add it to the group.
                 let choice = Choice(name: input!.text!)
                 self.choiceGroup?.addChoiceToGroup(choice: choice)

@@ -23,7 +23,7 @@ class ChoiceCell: UITableViewCell {
     
     func configure(choice:Choice) {
         self.displayLabel.text = choice.display!
-        self.accessoryView?.isHidden = choice.decided!
+        self.accessoryView?.isHidden = !choice.decided!
     }
 
 }
