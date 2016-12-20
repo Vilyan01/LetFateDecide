@@ -53,7 +53,13 @@ class DecisionViewController: UITableViewController {
 
     // MARK: - Actions
     @IBAction func letFateDecideTapped(_ sender: Any) {
-        print("Fate Decider says: \(fateDecider!.decideFate(choiceGroup: self.choiceGroup!)) wins")
+        // reset the choices
+        self.choiceGroup?.resetChoices()
+        
+        // find winning index
+        let winningIndex = fateDecider!.decideFate(choiceGroup: self.choiceGroup!)
+        choiceGroup?.selectChoiceAtIndex(index: winningIndex)
+        self.tableView.reloadData()
     }
     
     // Handle the adding of choices to the choice group.
@@ -73,8 +79,6 @@ class DecisionViewController: UITableViewController {
         controller.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
             // get input from text field
             if input!.text! != "" {
-                // reset the choices
-                self.choiceGroup?.resetChoices()
                 
                 // create a new choice and add it to the group.
                 let choice = Choice(name: input!.text!)

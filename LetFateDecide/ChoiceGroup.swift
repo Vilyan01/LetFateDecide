@@ -33,9 +33,9 @@ struct ChoiceGroup {
     }
     
     // reset the choices back to default
-    func resetChoices() {
-        for var choice in choices {
-            choice.decided = false
+    mutating func resetChoices() {
+        for i in 0...choices.count - 1 {
+            choices[i].decided = false
         }
     }
     
