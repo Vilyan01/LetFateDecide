@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8842A6491E0901360034609E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842A6481E0901360034609E /* AppDelegate.swift */; };
-		8842A64B1E0901360034609E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842A64A1E0901360034609E /* ViewController.swift */; };
 		8842A64E1E0901360034609E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8842A64C1E0901360034609E /* Main.storyboard */; };
 		8842A6501E0901360034609E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8842A64F1E0901360034609E /* Assets.xcassets */; };
 		8842A6531E0901360034609E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8842A6511E0901360034609E /* LaunchScreen.storyboard */; };
 		8842A65E1E0901370034609E /* LetFateDecideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842A65D1E0901370034609E /* LetFateDecideTests.swift */; };
 		8842A6691E0901370034609E /* LetFateDecideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842A6681E0901370034609E /* LetFateDecideUITests.swift */; };
+		888D37BB1E0904B30065ED08 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D37BA1E0904B30065ED08 /* Choice.swift */; };
+		888D37BF1E0906330065ED08 /* ChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D37BE1E0906330065ED08 /* ChoiceCell.swift */; };
+		888D37C11E09088A0065ED08 /* ChoiceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D37C01E09088A0065ED08 /* ChoiceGroup.swift */; };
+		888D37C31E090A760065ED08 /* DecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D37C21E090A760065ED08 /* DecisionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		8842A6451E0901360034609E /* LetFateDecide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetFateDecide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8842A6481E0901360034609E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8842A64A1E0901360034609E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8842A64D1E0901360034609E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8842A64F1E0901360034609E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8842A6521E0901360034609E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		8842A6641E0901370034609E /* LetFateDecideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetFateDecideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8842A6681E0901370034609E /* LetFateDecideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetFateDecideUITests.swift; sourceTree = "<group>"; };
 		8842A66A1E0901370034609E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		888D37BA1E0904B30065ED08 /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Choice.swift; path = models/Choice.swift; sourceTree = "<group>"; };
+		888D37BE1E0906330065ED08 /* ChoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoiceCell.swift; path = views/ChoiceCell.swift; sourceTree = "<group>"; };
+		888D37C01E09088A0065ED08 /* ChoiceGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceGroup.swift; sourceTree = "<group>"; };
+		888D37C21E090A760065ED08 /* DecisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecisionViewController.swift; path = controllers/DecisionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,10 @@
 		8842A6471E0901360034609E /* LetFateDecide */ = {
 			isa = PBXGroup;
 			children = (
-				8842A6481E0901360034609E /* AppDelegate.swift */,
-				8842A64A1E0901360034609E /* ViewController.swift */,
-				8842A64C1E0901360034609E /* Main.storyboard */,
-				8842A64F1E0901360034609E /* Assets.xcassets */,
-				8842A6511E0901360034609E /* LaunchScreen.storyboard */,
-				8842A6541E0901360034609E /* Info.plist */,
+				8842A6791E0902330034609E /* models */,
+				8842A6781E09022E0034609E /* views */,
+				8842A6771E0902210034609E /* controllers */,
+				8842A6761E0901CE0034609E /* app */,
 			);
 			path = LetFateDecide;
 			sourceTree = "<group>";
@@ -123,6 +127,43 @@
 				8842A66A1E0901370034609E /* Info.plist */,
 			);
 			path = LetFateDecideUITests;
+			sourceTree = "<group>";
+		};
+		8842A6761E0901CE0034609E /* app */ = {
+			isa = PBXGroup;
+			children = (
+				8842A64C1E0901360034609E /* Main.storyboard */,
+				8842A6511E0901360034609E /* LaunchScreen.storyboard */,
+				8842A6481E0901360034609E /* AppDelegate.swift */,
+				8842A64F1E0901360034609E /* Assets.xcassets */,
+				8842A6541E0901360034609E /* Info.plist */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		8842A6771E0902210034609E /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				888D37C21E090A760065ED08 /* DecisionViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		8842A6781E09022E0034609E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				888D37BE1E0906330065ED08 /* ChoiceCell.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		8842A6791E0902330034609E /* models */ = {
+			isa = PBXGroup;
+			children = (
+				888D37BA1E0904B30065ED08 /* Choice.swift */,
+				888D37C01E09088A0065ED08 /* ChoiceGroup.swift */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8842A64B1E0901360034609E /* ViewController.swift in Sources */,
+				888D37C31E090A760065ED08 /* DecisionViewController.swift in Sources */,
+				888D37C11E09088A0065ED08 /* ChoiceGroup.swift in Sources */,
+				888D37BB1E0904B30065ED08 /* Choice.swift in Sources */,
 				8842A6491E0901360034609E /* AppDelegate.swift in Sources */,
+				888D37BF1E0906330065ED08 /* ChoiceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +552,7 @@
 				8842A66F1E0901370034609E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8842A6701E0901370034609E /* Build configuration list for PBXNativeTarget "LetFateDecideTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +561,7 @@
 				8842A6721E0901370034609E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8842A6731E0901370034609E /* Build configuration list for PBXNativeTarget "LetFateDecideUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +570,7 @@
 				8842A6751E0901370034609E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
